@@ -1,0 +1,189 @@
+
+
+
+/* 페이지를 부드럽게 스크롤 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+section {
+    margin-bottom: 4vh; /* 각 섹션 간의 여백 설정 */
+}
+
+section h2, section h3 {
+    font-size: 2vw; /* 반응형 텍스트 크기 */
+    margin-bottom: 2vh; /* 제목 아래 여백 */
+    color: #333;
+}
+
+section p {
+    font-size: 1.5vw; /* 반응형 텍스트 크기 */
+    margin-bottom: 2vh; /* 텍스트 아래 여백 */
+    color: #555;
+}
+
+/* 도서 추가 페이지 스타일 */
+h1 {
+    font-size: 2.5vw; /* 큰 제목의 크기 */
+    color: #333;
+    margin-bottom: 2vh; /* 제목 아래 여백 */
+}
+
+h3 {
+    font-size: 2vw; /* 소제목의 크기 */
+    color: #333;
+    margin-bottom: 1.5vh; /* 소제목 아래 여백 */
+}
+
+
+form {
+    margin: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input[type="text"] {
+    width: 50%;
+    padding: 1%;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ddd;
+    font-size: 1.1vw;
+}
+
+form button {
+    background-color: #3C33A4;
+    color: white;
+    border: none;
+    padding: 1% 2%;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+form button:hover {
+    background-color: #3B3B98;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+    table-layout: fixed; /* 테이블 레이아웃을 고정하여 모든 셀이 동일한 너비를 가지도록 설정 */
+}
+
+table th, table td {
+    padding: 1%;
+    text-align: center;
+    border: 0.1vw solid #ddd;
+    vertical-align: middle;
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+    text-overflow: ellipsis; /* 넘치는 내용은 말줄임 표시 (...) */
+    white-space: nowrap; /* 줄바꿈을 방지 */
+}
+
+table th {
+    background-color: #E6E6E6;
+    font-size: 1.1vw;
+    color: #333;
+}
+
+table td {
+    font-size: 1vw;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* 테두리 겹침 제거 */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.2vw;
+    table-layout: fixed; /* 열의 너비를 고정 */
+    overflow: hidden;
+}
+
+table th, table td, table th, table td {
+    padding: 1vw; /* 셀 안쪽 여백 */
+    border: 1px solid #ccc; /* 셀 테두리 색상 */
+    text-align: center;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 내용 숨김 처리 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표(...)로 표시 */
+}
+
+table tr:first-child, table tr:first-child {
+    background-color: #f2f2f2; /* 첫 번째 행의 배경색 */
+    font-weight: bold;
+}
+
+table td[colspan="7"], table td[colspan="7"] {
+    background-color: #eee;
+    font-size: 1.5vw;
+}
+
+table td button {
+    background-color: #3C33A4;
+    color: white;
+    border: none;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    width: 100%; /* 버튼이 셀의 전체 너비를 차지하도록 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 전체 너비 계산 */
+    overflow: hidden; /* 버튼 내부 텍스트가 넘칠 경우 숨김 */
+    text-overflow: ellipsis; /* 버튼 텍스트 넘침 시 말줄임 표시 (...) */
+    white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+}
+
+table td button:hover {
+    background-color: #3B3B98;
+}
+
+/* Pagination */
+#page {
+    text-align: center;
+    margin: 2% 0;
+}
+
+#page a {
+    color: #5E5DF0;
+    padding: 0.8% 1.6%;
+    text-decoration: none;
+    border: 0.1vw solid #ddd;
+    margin: 0 0.4%;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+#page a:hover {
+    background-color: #f1f1f1;
+    border-color: #3B3B98;
+}
+
+#page a.page.prv, #page a.page.next {
+    font-weight: bold;
+}
+
+#page .active{
+   	background-color: #ccccff;
+}
+
+html {
+   height: 100vh;
+}
+
+body {
+   height: 100%;
+   position: relative;
+}
+
+footer {
+   position : relative;
+   bottom: 0;
+}
